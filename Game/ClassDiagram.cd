@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Barrack" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJQAAAAAAAAQAAAAAAAAAAEAAAABAAABAACAAAAAAAA=</HashCode>
+      <FileName>Header\Barrack.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="House" Collapsed="true">
+    <Position X="4.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJQAAAAAAAAQAAAAAAAAEAAAAAABgAABAAIAAAAAAAA=</HashCode>
+      <FileName>Header\House.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeleeUnit" Collapsed="true">
+    <Position X="6.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAACAAIAAAAAAAgAAAAAAAAAAAAAIAAAAAAAAACA=</HashCode>
+      <FileName>Header\MeleeUnit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RangedUnit" Collapsed="true">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAACAAIAAAAAAAAAAABAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Header\RangedUnit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CombatUnit" Collapsed="true">
+    <Position X="6.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAACAAAAAAABAAAEAAAAAIAAAEAABAAAAAAAABCA=</HashCode>
+      <FileName>Header\CombatUnit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Building" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AFAAABAQQAAAIAAAAEAAAACAAAABAAAEAgQAAAAAAAA=</HashCode>
+      <FileName>Header\Building.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject" Collapsed="true">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <AssociationLine Name="m_GameObjectManager" Type="std::shared_ptr&lt;_Ty&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.464" Y="3.622" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABAIAAAAACJEABBAAQEEAAAAAAACgAAACEAIAAIAAAA=</HashCode>
+      <FileName>Header\GameObject.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_GameObjectManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Unit" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Unit::UnitState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Header\Unit.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="m_PathManager" Type="std::shared_ptr&lt;_Ty&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.256" Y="0.685" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAIIAQAVAAYSAAAAEAAAABAAAAAAAAAAAUgAA=</HashCode>
+      <FileName>Header\Unit.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="m_PathManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Object" Collapsed="true">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAACAIASAREQCgUABIIgAgAAAIABCAAAggQA4gBCA=</HashCode>
+      <FileName>C:\Users\Public\School_buas\Perforce\2Y2021A-Y2-PR-RTS\RTSEngine\RTSEngine\Headers\EntityManager\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyPlayer" Collapsed="true" HideInheritanceLine="true">
+    <Position X="2" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AF4BEAABAAAABAAAAQAAAAAAAAAAABiAAAAKAgAEAAA=</HashCode>
+      <FileName>Header\EnemyPlayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Resource" Collapsed="true">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAICAAAAAAIAAAEAAAAAACAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Header\Resource.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="std::shared_ptr&lt;_Ty&gt;" Collapsed="true">
+    <Position X="10.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAEAAAIAgAAEAEAAICgAQAgAAAAAAA=</HashCode>
+      <FileName>C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\memory</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

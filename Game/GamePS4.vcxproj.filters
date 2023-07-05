@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;cc;s;asm</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;pssli</Extensions>
+    </Filter>
+    <Filter Include="Source Files\GameObject">
+      <UniqueIdentifier>{59f13473-8a42-4097-bf79-342cba555cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject">
+      <UniqueIdentifier>{a8d8ed26-e5d2-4609-8029-6c159c35d2cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject\Building">
+      <UniqueIdentifier>{8f768c23-f6c0-46c0-9b4f-ae05e7f1d87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject\Building">
+      <UniqueIdentifier>{45974134-417a-49ae-a91f-7556739be2d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject\Unit">
+      <UniqueIdentifier>{b8dd780c-02b3-41f7-bc8c-89869036116b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject\Unit">
+      <UniqueIdentifier>{03637df9-c831-493a-9001-9d2dfb7bce30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObject\Unit\CombatUnit">
+      <UniqueIdentifier>{7aeed4ba-fac7-4dbd-bfa2-525c4f93f2e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObject\Unit\CombatUnit">
+      <UniqueIdentifier>{901d14bc-928f-44c8-a9c8-d0ceb9d9c2aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Player">
+      <UniqueIdentifier>{7a68306d-8368-4a17-91f6-23d97386a28a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Player">
+      <UniqueIdentifier>{2798d282-876d-46c3-8f84-c1c4a497913b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Resource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\BuilderUnit.cpp">
+      <Filter>Source Files\GameObject\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Building.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Unit.cpp">
+      <Filter>Source Files\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\CombatUnit.cpp">
+      <Filter>Source Files\GameObject\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\House.cpp">
+      <Filter>Source Files\GameObject\Building</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Barrack.cpp">
+      <Filter>Source Files\GameObject\Building</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\MeleeUnit.cpp">
+      <Filter>Source Files\GameObject\Unit\CombatUnit</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\RangedUnit.cpp">
+      <Filter>Source Files\GameObject\Unit\CombatUnit</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameObjectManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\EnemyPlayer.cpp">
+      <Filter>Source Files\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\PlayerControls.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameMatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\ObjectValues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\BuilderUnit.h">
+      <Filter>Header Files\GameObject\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Building.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Unit.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\CombatUnit.h">
+      <Filter>Header Files\GameObject\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\House.h">
+      <Filter>Header Files\GameObject\Building</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Barrack.h">
+      <Filter>Header Files\GameObject\Building</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\MeleeUnit.h">
+      <Filter>Header Files\GameObject\Unit\CombatUnit</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\GameObject.h">
+      <Filter>Header Files\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\RangedUnit.h">
+      <Filter>Header Files\GameObject\Unit\CombatUnit</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\GameObjectManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\EnemyPlayer.h">
+      <Filter>Header Files\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\PlayerControls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header\GameMatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+</Project>

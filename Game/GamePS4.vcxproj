@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ORBIS">
+      <Configuration>Debug</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ORBIS">
+      <Configuration>Release</Configuration>
+      <Platform>ORBIS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Barrack.cpp" />
+    <ClCompile Include="Source\BuilderUnit.cpp" />
+    <ClCompile Include="Source\Building.cpp" />
+    <ClCompile Include="Source\CombatUnit.cpp" />
+    <ClCompile Include="Source\EnemyPlayer.cpp" />
+    <ClCompile Include="Source\GameMatch.cpp" />
+    <ClCompile Include="Source\GameObject.cpp" />
+    <ClCompile Include="Source\GameObjectManager.cpp" />
+    <ClCompile Include="Source\House.cpp" />
+    <ClCompile Include="Source\Main.cpp" />
+    <ClCompile Include="Source\MeleeUnit.cpp" />
+    <ClCompile Include="Source\Player.cpp" />
+    <ClCompile Include="Source\PlayerControls.cpp" />
+    <ClCompile Include="Source\RangedUnit.cpp" />
+    <ClCompile Include="Source\Resource.cpp" />
+    <ClCompile Include="Source\Unit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header\Barrack.h" />
+    <ClInclude Include="Header\BuilderUnit.h" />
+    <ClInclude Include="Header\Building.h" />
+    <ClInclude Include="Header\CombatUnit.h" />
+    <ClInclude Include="Header\EnemyPlayer.h" />
+    <ClInclude Include="Header\GameMatch.h" />
+    <ClInclude Include="Header\GameObject.h" />
+    <ClInclude Include="Header\GameObjectManager.h" />
+    <ClInclude Include="Header\House.h" />
+    <ClInclude Include="Header\MeleeUnit.h" />
+    <ClInclude Include="Header\ObjectValues.h" />
+    <ClInclude Include="Header\Player.h" />
+    <ClInclude Include="Header\PlayerControls.h" />
+    <ClInclude Include="Header\RangedUnit.h" />
+    <ClInclude Include="Header\Resource.h" />
+    <ClInclude Include="Header\Unit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RTSEngine\RTSEngine.vcxproj">
+      <Project>{6fdea187-faf2-4ad6-b334-56778fe2d677}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5AB14C54-6088-499A-BFD0-0ADCF0C1C399}</ProjectGuid>
+    <ProjectName>Game</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformToolset>v142</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(DebuggerFlavor)'=='ORBISDebugger'" Label="OverrideDebuggerDefaults">
+    <!--LocalDebuggerCommand>$(TargetPath)</LocalDebuggerCommand-->
+    <!--LocalDebuggerCommandArguments></LocalDebuggerCommandArguments-->
+    <!--LocalDebuggerTarget></LocalDebuggerTarget-->
+    <!--LocalDebuggerWorkingDirectory>$(ProjectDir)</LocalDebuggerWorkingDirectory-->
+    <!--LocalRunCommandLine></LocalRunCommandLine-->
+  </PropertyGroup>
+  <ImportGroup Label="ExtensionSettings">
+    <Import Condition="Exists('$(VCTargetsPath)\BuildCustomizations\OrbisWavePsslc.props')" Project="$(VCTargetsPath)\BuildCustomizations\OrbisWavePsslc.props" />
+    <Import Condition="Exists('$(VCTargetsPath)\BuildCustomizations\SCU.props')" Project="$(VCTargetsPath)\BuildCustomizations\SCU.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <OutDir>$(SolutionDir)Bin\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>RTSGame</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <OutDir>$(SolutionDir)Bin\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+    <TargetName>RTSGame</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Bin\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Bin\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(Platform)_$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ORBIS'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <OptimizationLevel>Level2</OptimizationLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CppLanguageStd>Cpp17</CppLanguageStd>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include\;$(SolutionDir)RTSEngine\Headers\;$(SolutionDir)GamePS4\Header\;$(SolutionDir)PS4Specific\Header\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExtraWarnings>true</ExtraWarnings>
+      <WarningsAsErrors>true</WarningsAsErrors>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bin\$(Platform)_$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>RTSEngine.a;PS4Specific.a;libfmodL_stub_weak.a;libScePad_stub_weak.a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ORBIS'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions);</PreprocessorDefinitions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <CppLanguageStd>Cpp17</CppLanguageStd>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include\;$(SolutionDir)RTSEngine\Headers\;$(SolutionDir)GamePS4\Header\;$(SolutionDir)PS4Specific\Header\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExtraWarnings>true</ExtraWarnings>
+      <WarningsAsErrors>true</WarningsAsErrors>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+    <Link>
+      <Addressing>NonAslr</Addressing>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bin\$(Platform)_$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>RTSEngine.a;PS4Specific.a;libfmodL_stub_weak.a;libScePad_stub_weak.a;libSceUserService_stub_weak.a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include\;$(SolutionDir)RTSEngine\Headers\;$(SolutionDir)GamePS4\Header\;$(SolutionDir)RTSRenderer\Headers\;$(SolutionDir)ImGui\Headers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\$(Configuration);$(SolutionDir)Bin\$(Platform)_$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmod_vc.lib;dxguid.lib;d3dcompiler.lib;RTSEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(WindowsSdkDir)redist\d3d\$(PlatformShortName)\D3DCompile*.DLL" "$(TargetDir)"
+copy "$(SolutionDir)Lib\$(Configuration)\fmod.DLL" "$(TargetDir)"
+copy "$(SolutionDir)Lib\$(Configuration)\gainput-d.DLL" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(SolutionDir)Include\;$(SolutionDir)RTSEngine\Headers\;$(SolutionDir)GamePS4\Header\;$(SolutionDir)RTSRenderer\Headers\;$(SolutionDir)ImGui\Headers\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>SFML_STATIC</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Lib\$(Configuration);$(SolutionDir)Bin\$(Platform)_$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>RTSEngine.lib;dxguid.lib;d3dcompiler.lib;fmod_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>
+      </SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(WindowsSdkDir)redist\d3d\x64\D3DCompile*.DLL" "$(TargetDir)"
+copy "$(SolutionDir)Lib\$(Configuration)\fmod.DLL" "$(TargetDir)"
+copy "$(SolutionDir)Lib\$(Configuration)\gainput.DLL" "$(TargetDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Condition="Exists('$(VCTargetsPath)\BuildCustomizations\OrbisWavePsslc.targets')" Project="$(VCTargetsPath)\BuildCustomizations\OrbisWavePsslc.targets" />
+    <Import Condition="Exists('$(VCTargetsPath)\BuildCustomizations\SCU.targets')" Project="$(VCTargetsPath)\BuildCustomizations\SCU.targets" />
+  </ImportGroup>
+</Project>
